@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+<!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/myImg" class="d-inline-flex link-body-emphasis text-decoration-none bi bi-tsunami">
+              <!-- <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-tsunami" viewBox="0 0 16 16">
+                <path d="M.036 12.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65zm0 2a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65zM2.662 8.08c-.456 1.063-.994 2.098-1.842 2.804a.5.5 0 0 1-.64-.768c.652-.544 1.114-1.384 1.564-2.43.14-.328.281-.68.427-1.044.302-.754.624-1.559 1.01-2.308C3.763 3.2 4.528 2.105 5.7 1.299 6.877.49 8.418 0 10.5 0c1.463 0 2.511.4 3.179 1.058.67.66.893 1.518.819 2.302-.074.771-.441 1.516-1.02 1.965a1.878 1.878 0 0 1-1.904.27c-.65.642-.907 1.679-.71 2.614C11.076 9.215 11.784 10 13 10h2.5a.5.5 0 0 1 0 1H13c-1.784 0-2.826-1.215-3.114-2.585-.232-1.1.005-2.373.758-3.284L10.5 5.06l-.777.388a.5.5 0 0 1-.447 0l-1-.5a.5.5 0 0 1 .447-.894l.777.388.776-.388a.5.5 0 0 1 .447 0l1 .5a.493.493 0 0 1 .034.018c.44.264.81.195 1.108-.036.328-.255.586-.729.637-1.27.05-.529-.1-1.076-.525-1.495-.426-.42-1.19-.77-2.477-.77-1.918 0-3.252.448-4.232 1.123C5.283 2.8 4.61 3.738 4.07 4.79c-.365.71-.655 1.433-.945 2.16-.15.376-.301.753-.463 1.13z"/>
+              </svg>
+            </a>
+          </div>
+    
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/myImg" class="nav-link px-2 link-secondary">首頁</a></li>
+            <li><a href="/myImg" class="nav-link px-2">圖像工具</a></li>
+            <li><a href="/myeventList" class="nav-link px-2">任務清單</a></li>
+            <li><a href="/histogram1" class="nav-link px-2">說明</a></li>
+            <!-- <li><a href="#" class="nav-link px-2">About</a></li> -->
+          </ul>
+    
+          <div class="col-md-3 text-end">
+            <!-- <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button> -->
+            <a href="/" class="btn btn-outline-primary me-2">登出</a>
+            <!-- <a href="/signup" class="btn btn-primary">Sign-up</a> -->
+          </div>
+        </header>
+      </div>
+      <!-- --------------------------------------------------------------------  -->
+    <div><button class="btn btn-outline-primary me-2" onclick="linghterTheImg()" style="margin-left: 4%;">增強</button>
+        <button class="btn btn-outline-primary me-2" onclick="darkerTheImg()">減弱</button>
+        <button class="btn btn-outline-primary me-2" onclick="changeHistogram()">亮度修改2</button>
+        <button class="btn btn-outline-primary me-2" onclick="downloadImage()" style="float: right;margin-right: 4%;">下載</button>
+        <a href="/download_myImg" download style="float: right;">
+            <button class="btn btn-outline-primary me-2">Download</button>
+        </a>
+        
+    </div>
+    <br>
+    <div class="mb-3">
+        <!-- action="" -->
+        <form action="/save_org_img_test" method="post" enctype="multipart/form-data" id='sub_upload'>
+            <label for="formFile" class="form-label">上傳圖片(.png)</label>
+            <input class="form-control" type="file" id="formFile" accept=".png" name='uploadMyFile' >
+            <input class="form-control " type="submit" value="Upload"  style="background-color: rgb(240, 249, 255);">
+        </form>
+
+    </div>
+    <canvas id="imageCanvas"></canvas>
+    
+    <hr>
+    
+    <!-- <img id="imageCanvas2"> -->
+    <canvas id="imageCanvas2"></canvas>
+    <hr>
+    <!-- 測試用 -->
+    <!-- Should display a small red dot: <img id="my-img">
+    <button onclick="redDot()">red dot</button> -->
+    
+    <!-- <a href="/histogram1">連結到說明</a> -->
+
+
+
+    <script>
+        // var AAA
+        // 监听文件选择事件
+        var imageOnLoad;
+        var imgData;
+        // var apple=123;
+        var imgDataRGBA;
+        var dist_brightness = 30;
+        var check_changeCNV;
+        // var scalewidth;
+        var scaleheight;
+        var img_height = 1;
+        var img_width = 1;
+
+        // function saveImgToJSON(imageData,canvas) {
+        //     // const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+        //     const jsonImage = {
+        //         width: canvas.width,
+        //         height: canvas.height,
+        //         data: Array.from(imageData)
+        //     };
+
+        //     const jsonBlob = new Blob([JSON.stringify(jsonImage)], { type: 'application/json' });
+        //     const img_js = document.createElement('a');
+        //     img_js.href = URL.createObjectURL(jsonBlob);
+        //     img_js.download = 'canvas_image.json';
+        //     img_js.click();
+        // }
+        
+        document.getElementById('formFile').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            cleanCV2();
+            check_changeCNV = 0;
+            img_height = 1;
+            img_width = 1;
+            // console.log(1);
+            if (file) {
+                // 创建FileReader对象
+                const reader = new FileReader();
+
+                // 监听FileReader的加载事件
+                reader.onload = function (e) {
+                    // 宣告一個變數resultArray 這個變數是一個 Uint8Array
+                    const resultArray = new Uint8Array(e.target.result);
+                    // console.log(e.target.result);
+                    // console.log(e.target);
+                    // console.log(e);
+
+                    // 将文件内容存储在AAA变量中
+                    const AAA = resultArray;
+                    // AAA = resultArray;
+                    // ---------------------
+                    // const imgToServer2 = {
+                        //         // width : canvas.width,
+                        //         // height : canvas.height,
+                        //         data : Array.from(AAA)
+                        //         // data :e.target.result
+                        //     }
+                    // $.ajax({
+                        //     type: "post",
+                        //     url: "/save_org_img_test",
+                        //     contentType: "application/json",
+                        //     // data: imgToServer
+                        //     data: JSON.stringify(imgToServer2)
+                        // });
+                    // ---------------------
+                    // ---------------------
+                
+                    // console.log( AAA);
+                    // console.log(AAA.values());
+                    // 在控制台打印第一个8个字节的内容
+                    // console.log(AAA.slice(0, 8));
+
+                    // 可以在这里对Uint8Array执行你的其他操作
+
+                    const canvas = document.getElementById('imageCanvas');
+                    const context = canvas.getContext('2d');
+                    // console.log(typeof AAA);
+                    // console.log( AAA.length());
+
+                    // 从 Uint8Array 创建一个 Blob 对象
+                    const blob = new Blob([AAA], { type: 'image/png' });
+
+
+                    // console.log(blob );
+                    // 创建一个临时 URL，用于指向 Blob 对象
+                    const url = URL.createObjectURL(blob);
+
+                    // 创建一个新 Image 对象
+                    const image = new Image();
+
+                    // 当图像加载完成时绘制到 Canvas 上
+                    image.onload = function () {
+                        canvas.width = image.width;
+                        canvas.height = image.height;
+                        // console.log(canvas.width);
+                        // console.log(canvas.height);
+                        img_height = image.height;
+                        img_width = image.width;
+                        context.drawImage(image, 0, 0);
+                        imageOnLoad = image;
+                        // console.log(image);
+                        imgData = context.getImageData(0, 0, canvas.width, canvas.height).data;
+                        // console.log(typeof imgData);
+                        // console.log(imgData);
+                        
+                        // saveImgToJSON(imgData,canvas);
+
+                        const imgToServer = {
+                            width : canvas.width,
+                            height : canvas.height,
+                            data : Array.from(imgData)
+                        }
+
+                        // console.log(imgToServer.data);
+                        // console.log(JSON.stringify(imgToServer));
+
+                        $.ajax({
+                            type: "post",
+                            url: "/saveImage",
+                            contentType: "application/json",
+                            // data: imgToServer
+                            data: JSON.stringify(imgToServer)
+                        });
+
+                        // console.log(screen.width);
+                        // if (canvas.width >screen.width*0.7){
+                        if (canvas.width >screen.height*0.6){
+                            check_changeCNV =1;
+                            // scalewidth = screen.width*0.7/canvas.width;
+                            scaleheight = screen.height*0.6/canvas.height;
+                            cleanCV1();
+                            // canvas.width = image.width*scalewidth;
+                            // canvas.height = image.height*scalewidth;
+                            canvas.width = image.width*scaleheight;
+                            canvas.height = image.height*scaleheight;
+
+                            // context.scale(scalewidth,scaleheight);
+                            // context.scale(scalewidth,scalewidth);
+                            context.scale(scaleheight,scaleheight);
+                            
+                            context.drawImage(image, 0, 0);
+                        }
+                        
+                        
+                    };
+
+                    // 设置图像的源为临时 URL
+                    image.src = url;
+                    // console.log(url);
+
+                };
+
+                // 读取文件内容
+                reader.readAsArrayBuffer(file);
+                // reader.readAsBinaryString(file);
+
+
+                
+
+            }
+        });
+
+
+        function linghterTheImg() {
+
+            // console.log(imgData);
+            const canvas = document.getElementById('imageCanvas');
+            const context = canvas.getContext('2d');
+            // console.log(imgData.length);
+            for(var i=0;i<(imgData.length/4);i++){
+                imgData[i*4]=imgData[i*4]+dist_brightness;
+                imgData[i*4+1]=imgData[i*4+1]+dist_brightness;
+                imgData[i*4+2]=imgData[i*4+2]+dist_brightness;
+            }
+            // imgDataRGBA = new ImageData(imgData,canvas.width, canvas.height);
+            imgDataRGBA = new ImageData(imgData,img_width, img_height);
+            // console.log(Object.getPrototypeOf(imgDataRGBA));
+            
+            // var k =0;
+            // for (var i = 0; i < canvas.width;i++) {
+            //     for (var j = 0; j < canvas.height;j++) {
+            //         imgDataRGBA[k++][i][j] = imgData[i*width+ j*height] ;
+            //         imgDataRGBA[k++][i][j] = imgData[i*width+ j*height+1] ;
+            //         imgDataRGBA[k++][i][j] = imgData[i*width+ j*height+2] ;
+            //         imgDataRGBA[k++][i][j] = imgData[i*width+ j*height+3] ;
+            //     }
+            // }
+
+
+
+            // image.onload = function () {
+            //     canvas.width = image.width;
+            //     canvas.height = image.height;
+            //     // context.drawImage(image, 0, 0);
+
+            // };
+
+            // console.log(typeof imgData);
+            // console.log(imgDataRGBA);
+            const canvas2 = document.getElementById('imageCanvas2');
+            const context2 = canvas2.getContext('2d');
+            canvas2.width  = img_width ;
+            canvas2.height = img_height ;
+            // console.log(canvas2.width);
+            // console.log(canvas2.height);
+            context2.putImageData(imgDataRGBA, 0, 0);
+            // canvas2.width  = canvas.width ;  
+            // canvas2.height = canvas.height;
+
+            // console.log(scaleheight);
+            
+            if (check_changeCNV){
+                // console.log(imgData);
+                const url = canvas2.toDataURL();
+                canvas2.width  = canvas.width ;  //更新畫布長寬可能會洗掉現有圖案
+                canvas2.height = canvas.height;
+                // context2.putImageData(imgDataRGBA, 0, 0);
+                context2.scale(scaleheight,scaleheight);
+                const image = new Image();
+                // console.log(image);
+                image.onload = function () {
+                    // cleanCV2();
+                    context2.drawImage(image, 0, 0);
+                    // console.log(1);
+                    // console.log(image);
+                    // $('#imageCanvas2').val(image)
+                }
+                // console.log(canvas2.width);
+                // console.log(canvas2.height);
+                image.src = url;
+                
+            }
+            // --------------------------------------
+            // else{
+            //     // console.log(2);
+            //     context2.putImageData(imgDataRGBA, 0, 0);
+            // }
+            
+            // context2.drawImage(imgDataRGBA, 0, 0);
+            // console.log(imgDataRGBA);
+            // console.log(imgDataRGBA.data);
+            // 创建一个临时 URL，用于指向 Blob 对象
+            // const url = URL.createObjectURL(blob);
+
+            // document.getElementById('imageCanvas2').src = url;
+
+        }
+
+        function darkerTheImg(){
+            const canvas = document.getElementById('imageCanvas');
+            const context = canvas.getContext('2d');
+            // console.log(imgData.length);
+            for(var i=0;i<(imgData.length/4);i++){
+                imgData[i*4]=imgData[i*4]-dist_brightness;
+                imgData[i*4+1]=imgData[i*4+1]-dist_brightness;
+                imgData[i*4+2]=imgData[i*4+2]-dist_brightness;
+            }
+            // imgDataRGBA = new ImageData(imgData,canvas.width, canvas.height);
+            imgDataRGBA = new ImageData(imgData,img_width, img_height);
+            
+            const canvas2 = document.getElementById('imageCanvas2');
+            const context2 = canvas2.getContext('2d');
+            canvas2.width  = img_width ;
+            canvas2.height = img_height ;
+            // console.log(canvas2.width);
+            // console.log(canvas2.height);
+            context2.putImageData(imgDataRGBA, 0, 0);
+
+            if (check_changeCNV){
+                // console.log(imgData);
+                const url = canvas2.toDataURL();
+                canvas2.width  = canvas.width ;  //更新畫布長寬可能會洗掉現有圖案
+                canvas2.height = canvas.height;
+                // context2.putImageData(imgDataRGBA, 0, 0);
+                context2.scale(scaleheight,scaleheight);
+                const image = new Image();
+                // console.log(image);
+                image.onload = function () {
+                    // cleanCV2();
+                    context2.drawImage(image, 0, 0);
+                    // console.log(1);
+                    // console.log(image);
+                    // $('#imageCanvas2').val(image)
+                }
+                // console.log(canvas2.width);
+                // console.log(canvas2.height);
+                image.src = url;
+                
+            }
+            // context2.drawImage(imgDataRGBA, 0, 0);
+        };
+
+        function downloadImage() {
+            // console.log(imgDataRGBA);
+            // console.log(typeof imgDataRGBA);
+            // console.log(apple);
+            // 
+            if (imgDataRGBA) {
+                // console.log("1");
+                const canvas = document.getElementById('imageCanvas2');
+                const dataURL = canvas.toDataURL("image/png");
+                const a = document.createElement("a");
+                a.href = dataURL;
+                a.download = "image.png";
+                a.click();
+                // URL.revokeObjectURL(a.href);
+            } else if(imageOnLoad){
+                var option = confirm('圖像尚未處理，確認下載?');
+                if(option){
+                    const canvas = document.getElementById('imageCanvas2');
+                    const dataURL = canvas.toDataURL("image/png");
+                    const a = document.createElement("a");
+                    a.href = dataURL;
+                    a.download = "image.png";
+                    a.click();
+                };
+            }else{
+                alert("請先加載圖像");
+            }
+        }
+
+
+        function changeHistogram(){
+            if(imageOnLoad){
+                // console.log(imgData);
+                const canvas = document.getElementById('imageCanvas');
+                const context = canvas.getContext('2d');
+                // console.log(imgData.length);
+
+
+                const canvas2 = document.getElementById('imageCanvas2');
+                const context2 = canvas2.getContext('2d');
+
+                $.get('/changeImageHistogram', function (e) {
+                canvas2.width  = e.width ;  
+                canvas2.height = e.height;
+                var image = new Uint8ClampedArray(e.data);
+                imgDataRGBA = new ImageData(image,canvas2.width, canvas2.height);
+                // console.log(e.data)
+                // console.log(imgData)
+                // console.log(image)
+                console.log(imgDataRGBA);
+                
+                //putImageData要寫在get裡面 不然會同時進行下半部導致收不到imgDataRGBA
+                context2.putImageData(imgDataRGBA, 0, 0);
+                // context2.drawImage(imgDataRGBA, 0, 0);
+                });
+                // console.log(imgDataRGBA);
+
+                // context2.putImageData(imgDataRGBA, 0, 0);
+            }else{
+                alert("請先加載圖像");
+            }
+        }
+
+
+        // clean canvas2
+        function cleanCV2(){
+            const canvas = document.getElementById('imageCanvas2');
+            const context = canvas.getContext('2d');
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+        function cleanCV1(){
+            const canvas = document.getElementById('imageCanvas');
+            const context = canvas.getContext('2d');
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // 取消submit鈕的跳轉
+        document.getElementById('sub_upload').addEventListener('submit', function (event) {
+            event.preventDefault();  // 阻止預設的表單提交行為
+            alert('1');
+            // 使用 XMLHttpRequest 或 Fetch API 進行表單提交
+            var form = event.target;
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    console.log('File uploaded successfully');
+                    // 可以添加其他處理成功上傳的操作
+                } else {
+                    console.log('File upload failed');
+                    // 可以添加其他處理上傳失敗的操作
+                }
+            }).catch(error => {
+                console.error('Error during file upload:', error);
+            });
+        });
+        // document.addEventListener(linghterTheImg,()=>{console.log(imgData);});
+
+        // function linghterTheImg() {
+        //     // const bbb = AAA.map(e=>{
+        //     //     return e+10;
+        //     // })
+        //     AAA = AAA.map(e => {
+        //         return e + 10;
+        //     });
+        //     // console.log(AAA.slice(0, 8));
+        //     // console.log(typeof AAA);
+        //     // console.log( AAA.length());
+        //     // console.log(AAA);
+        //     console.log(AAA);
+        //     const blob = new Blob([AAA.buffer], { type: 'image/png' });
+
+        //     // 创建一个临时 URL，用于指向 Blob 对象
+        //     const url = URL.createObjectURL(blob);
+
+        //     document.getElementById('imageCanvas2').src = url;
+
+        // }
+        
+
+        // blob 範例
+        // const content = new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0, 0, 5, 0, 0, 0, 5, 8, 6, 0, 0, 0, 141, 111, 38, 229, 0, 0, 0, 28, 73, 68, 65, 84, 8, 215, 99, 248, 255, 255, 63, 195, 127, 6, 32, 5, 195, 32, 18, 132, 208, 49, 241, 130, 88, 205, 4, 0, 14, 245, 53, 203, 209, 142, 14, 31, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130]);
+
+        // function redDot() {
+        //     // console.log(content);
+        //     document.getElementById('my-img').src = URL.createObjectURL(
+        //         new Blob([content.buffer], { type: 'image/png' } /* (1) */)
+        //     );
+        // }
+
+
+
+        // const canvas = document.getElementById('imageCanvas');
+        // const context = canvas.getContext('2d');
+
+        // // 从 Uint8Array 创建一个 Blob 对象
+        // const blob = new Blob([AAA], { type: 'image/png' });
+
+        // // 创建一个临时 URL，用于指向 Blob 对象
+        // const url = URL.createObjectURL(blob);
+
+        // // 创建一个新 Image 对象
+        // const image = new Image();
+
+        // // 当图像加载完成时绘制到 Canvas 上
+        // image.onload = function () {
+        //     canvas.width = image.width;
+        //     canvas.height = image.height;
+        //     context.drawImage(image, 0, 0);
+        // };
+
+        // // 设置图像的源为临时 URL
+        // image.src = url;
+        
+    </script>
+
+
+    <!-- <pre id="displayArea"></pre>
+      <script>
+        // 假设你有一个名为AAA的Uint8Array
+        const AAA = new Uint8Array([72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100]);
+    
+        // 将Uint8Array的内容转换为字符串
+        const text = new TextDecoder().decode(AAA);
+    
+        // 获取用于显示内容的<pre>元素
+        const displayArea = document.getElementById('displayArea');
+    
+        // 将内容插入到<pre>元素中
+        displayArea.textContent = text;
+      </script> -->
+
+
+
+    <script>
+        // 假设你有一个名为 AAA 的 Uint8Array，包含 PNG 图像数据
+
+        // 创建一个新 Canvas 元素
+        //參考資料:
+        // CanvasRenderingContext2D: getImageData() method 
+        // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData
+
+        // ImageData: ImageData() constructor
+        // https://developer.mozilla.org/en-US/docs/Web/API/ImageData/ImageData
+
+        // ImageData
+        // https://developer.mozilla.org/en-US/docs/Web/API/ImageData
+
+        // Uint8Array
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array
+
+        //Convert an image to ImageData (Uint8ClampedArray)
+        //https://stackoverflow.com/questions/45365571/convert-an-image-to-imagedata-uint8clampedarray
+
+
+        // HTML Canvas Graphics
+        // https://www.w3schools.com/html/html5_canvas.asp
+
+        // [WebAPIs] 檔案上傳 Input File, File Upload, and FileList
+        // https://pjchender.dev/webapis/webapis-file-input/
+
+        // avaScript Array 陣列操作方法大全 ( 含 ES6 )
+        // https://www.oxxostudio.tw/articles/201908/js-array.html
+
+        // Convert an image to an RGB array in Javascript
+        // https://stackoverflow.com/questions/10473484/convert-an-image-to-an-rgb-array-in-javascript
+
+        // JavaScript Canvas getImageData() function returning data with all the values as 0
+        // https://stackoverflow.com/questions/75734292/javascript-canvas-getimagedata-function-returning-data-with-all-the-values-as
+
+        // Capture HTML canvas as GIF/JPG/PNG/PDF?
+        // https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf
+
+        //get zindex
+        //https://stackoverflow.com/questions/1388007/getting-the-z-index-of-a-div-in-javascript
+
+        //python current date time
+        //https://stackoverflow.com/questions/415511/how-do-i-get-the-current-time
+
+        //flask 目錄結構
+        //https://medium.com/@jacky.goman/%E8%BC%95%E9%AC%86%E5%AD%B8%E7%BF%92python-%E7%94%A8-flask-%E6%89%93%E9%80%A0%E5%B1%AC%E6%96%BC%E8%87%AA%E5%B7%B1%E7%9A%84-web-%E7%8E%8B%E5%9C%8B-66197dbebbcb
+        
+        //latex 表格
+        //https://hackmd.io/@yueswater/Table_and_Figure
+
+        //How to clear the canvas for redrawing
+        //https://stackoverflow.com/questions/2142535/how-to-clear-the-canvas-for-redrawing
+
+        //小畫家 漸層
+        //https://www.youtube.com/watch?v=fZG-2QpK58o
+
+        //HTML5 canvas how to change putImageData scale
+        //https://stackoverflow.com/questions/24429830/html5-canvas-how-to-change-putimagedata-scale
+
+        //HTML canvas scale() 方法
+        //https://www.w3school.com.cn/tags/canvas_scale.asp
+
+        //Convert ImageData to blob in JS?
+        // https://stackoverflow.com/questions/65263758/convert-imagedata-to-blob-in-js
+
+        // 登入參考畫面
+        // https://stock.adobe.com/hk/images/user-login-interface-username-and-password-for-login-vector-illustration/310195019
+
+        //圖片來源 獅子
+        // https://www.sohu.com/a/706013133_121346181
+
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+    Python PIL和二进制图片互转
+    https://blog.csdn.net/lly1122334/article/details/108218530
+
+    https://gist.github.com/arvinsim/601c808aefe656bc68b6
+
+    Print a string as hexadecimal bytes
+    https://stackoverflow.com/questions/12214801/print-a-string-as-hexadecimal-bytes
+
+    Why does printing a png file in Python3 result in extra characters in IDAT chunk?
+    https://stackoverflow.com/questions/27322801/why-does-printing-a-png-file-in-python3-result-in-extra-characters-in-idat-chunk
+
+    基礎動畫
+    https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial/Basic_animations
+-->

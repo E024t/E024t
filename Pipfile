@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jsonify = "*"
+numpy = "*"
+imageio = "*"
+spyder-kernels = "==2.5.*"
+flask = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11.7"
